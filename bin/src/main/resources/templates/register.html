@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - JWT Nimbus</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="auth-shell">
+    <main class="card">
+        <div class="brand">JWT Nimbus - Thay thế JJWT</div>
+        <h1>Tạo tài khoản</h1>
+        <p class="muted">Mật khẩu được mã hóa BCrypt trước khi lưu vào SQL Server.</p>
+        <form id="registerForm">
+            <div class="field"><label for="fullName">Họ tên</label><input id="fullName" required maxlength="100" placeholder="Trần Quyết Chiến"></div>
+            <div class="field"><label for="email">Email</label><input id="email" type="email" required autocomplete="email" placeholder="chien@gmail.com"></div>
+            <div class="field"><label for="password">Mật khẩu</label><input id="password" type="password" minlength="6" required autocomplete="new-password"></div>
+            <button class="full" type="submit">Đăng ký</button>
+        </form>
+        <div id="message" class="message"></div>
+        <div class="footer-link">Đã có tài khoản? <a href="/login">Đăng nhập</a></div>
+    </main>
+</div>
+<script src="/js/mainjs.js"></script>
+</body>
+</html>

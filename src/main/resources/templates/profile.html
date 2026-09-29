@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - JWT Nimbus</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="profile-shell">
+    <div class="topbar">
+        <div><div class="brand">JWT Nimbus - Thay thế JJWT</div><h1>JWT Profile</h1></div>
+        <div class="actions"><button id="loadUsers" class="secondary">Tải /users</button><button id="logout" class="danger">Đăng xuất</button></div>
+    </div>
+    <section class="panel">
+        <h2>Người dùng hiện tại</h2>
+        <p class="muted">Dữ liệu được gọi từ <code>GET /users/me</code> bằng <code>Authorization: Bearer &lt;token&gt;</code>.</p>
+        <div id="profile" class="grid"></div>
+        <div id="profileMessage" class="message"></div>
+    </section>
+    <section class="panel">
+        <h2>Danh sách người dùng</h2>
+        <p class="muted">Nhấn “Tải /users” để kiểm tra API được bảo vệ.</p>
+        <div id="users"></div>
+    </section>
+</div>
+<script src="/js/mainjs.js"></script>
+</body>
+</html>

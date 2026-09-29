@@ -1,0 +1,7 @@
+USE master;
+GO
+IF DB_ID(N'jwt_nimbus_24110171') IS NULL
+BEGIN
+    CREATE DATABASE jwt_nimbus_24110171;
+END
+GO

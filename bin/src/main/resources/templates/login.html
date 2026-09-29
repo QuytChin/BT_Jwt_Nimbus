@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - JWT Nimbus</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="auth-shell">
+    <main class="card">
+        <div class="brand">SPRING BOOT 3 • SECURITY 6 • NIMBUS JWT</div>
+        <h1>Đăng nhập</h1>
+        <p class="muted">Đăng nhập để sinh JWT bằng thư viện Nimbus JOSE + JWT.</p>
+        <div class="message success" style="display:block">
+            Tài khoản có sẵn: <strong>chien@gmail.com</strong> / <strong>123456</strong><br>
+            Sinh viên: <strong>Trần Quyết Chiến</strong>
+        </div>
+        <form id="loginForm">
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" value="chien@gmail.com" required autocomplete="email">
+            </div>
+            <div class="field">
+                <label for="password">Mật khẩu</label>
+                <input id="password" type="password" value="123456" required autocomplete="current-password">
+            </div>
+            <button class="full" type="submit">Đăng nhập</button>
+        </form>
+        <div id="message" class="message"></div>
+        <div class="footer-link">Chưa có tài khoản? <a href="/register">Đăng ký</a></div>
+    </main>
+</div>
+<script src="/js/mainjs.js"></script>
+</body>
+</html>

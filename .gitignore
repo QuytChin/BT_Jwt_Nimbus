@@ -1,0 +1,16 @@
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Build
+target/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets (file vẫn nằm trong ZIP để import chạy ngay, nhưng Git sẽ bỏ qua)
+src/main/resources/application-local.properties
